@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.sailthru.docdb'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('org.mongodb:mongo-java-driver:3.12.6')
+}
+
+application {
+    mainClass = 'com.sailthru.docdb.SetOnInsertDocdb'
+}
